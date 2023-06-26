@@ -6,14 +6,16 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
-*:focus{
-    outline: 2px dotted #ff7500;
-}
-
 /* SITE-HEADER */
-.site-heading {
+.site-header {
     padding: 12px;
     background-color: #fff;
+}
+
+.site-header-div {
+    margin: 0px;
+    padding: 0%;
+    padding: 12px;
 }
 
 .site-header-container {
@@ -24,6 +26,26 @@ body {
     margin-right: auto;
 }
 
+.site-logo-text {
+    padding: 0px;
+    padding-right: 114px;
+    color: #222;
+    font-size: 24px;
+    font-family: "Open Sans";
+    font-weight: 600px;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.site-logo-text:hover {
+    color: #DE2E54;
+    opacity: 80%;
+} 
+
+.site-logo-text:active {
+    opacity: 60%;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -31,8 +53,8 @@ body {
 }
 
 .site-logo {
-    padding: 0px;
-    padding-right: 114px;
+    margin: 0px;
+    padding-right: 16px;
 }
 
 .site-header-ul {
@@ -40,6 +62,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 .site-heading-links {
@@ -49,10 +73,23 @@ body {
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 2px;
-    text-align: left;
     padding: 0px;
     padding-right: 32px;
     letter-spacing: 2px;
+    transition: 0.4s ease;
+}
+
+.site-heading-links:last-child {
+    padding-right: 32px;
+}
+
+.site-heading-links:hover {
+    color: #DE2E54;
+    opacity: 80%;
+}
+
+.site-heading-links:active {
+    opacity: 60%;
 }
 
 .site-header-link {
@@ -61,8 +98,21 @@ body {
     border: 2px solid #DE2E54;
     background: #DE2E54;
     color: #fff;
-    margin-left: 114px;
+    margin-left: 72px;
     padding: 12px 24px;
+    transition: color 0.4s ease;
+}
+
+.site-header-link:hover {
+    background-color: #fff;
+    color: #DE2E54;
+    opacity: 80%;
+}
+
+.site-header-link:active {
+    background-color: #DE2E54;
+    color: #fff;
+    opacity: 60%;
 }
 
 /* HERO */
@@ -83,8 +133,8 @@ body {
 }
 
 .hero-content {
-    padding-top: 71px;
-    padding-bottom: 169px;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .hero-title {
@@ -106,10 +156,23 @@ body {
     text-decoration: none;
     border-radius: 8px;
     border: 2px solid #DE2E54;
-    background: #DE2E54;
+    background-color: #DE2E54;
     color: #fff;
     padding: 12px 24px;
     margin: 0px;
+    transition: 0.4s ease;
+}
+
+.hero-link:hover {
+    background-color: rgba(222, 46, 84, 0.8);
+    color: rgba(255, 255, 255, 1);
+    opacity: 80%;
+}
+
+.hero-link:active {
+    background-color: rgba(222, 46, 84, 0.6);
+    color: rgba(255, 255, 255, 1);
+    opacity: 60%;
 }
 
 .hero-img {
@@ -179,6 +242,20 @@ body {
     color: #fff;
     padding: 12px 24px;
     border-radius: 8px;
+    transition: 0.4s ease;
+}
+
+
+.feature-link:hover {
+    background-color: #fff;
+    color: #DE2E54;
+    opacity: 80%;
+}
+
+.feature-link:active {
+    background-color: #DE2E54;
+    color: #fff;
+    opacity: 60%;
 }
 
 .container{
@@ -213,13 +290,39 @@ body {
     padding-right: 40px;
 }
 
-.footer-li {
+.site-footer-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style: none;
+}
+
+.footer-li {
     padding-right: 40px;
 }
 
-.footer-links {
+.footer-link-one {
     background-color: #0EB4C1;
+    border: #fff solid 2px;
+    border-radius: 8px;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.footer-link-one:hover {
+    background-color: #DE2E54;
+    color: #fff;
+}
+
+.footer-link-one:active {
+    opacity: 60%;
+}
+
+.footer-link-two {
+    background-color: #0EB4C1;
+    list-style: none;
     border: #fff solid 2px;
     border-radius: 8px;
     padding: 12px 24px;
@@ -251,6 +354,20 @@ body {
 
 .footer-heading {
     padding-right: 418px;
+    color: #FFF;
+    font-size: 24px;
+    font-family: "Open Sans";
+    transition: 0.4s ease;
+}
+
+.footer-heading:hover {
+    opacity: 80%;
+    color: #DE2E54
+}
+
+.footer-heading:active {
+    color: rgba(255, 255, 255, 1);
+    opacity: 60%;
 }
 
 .site-footer-ul {
@@ -268,4 +385,15 @@ body {
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
+    transition: 0.4s ease;
+}
+
+.site-footer-links:hover {
+    opacity: 80%;
+    color: #DE2E54
+}
+
+.site-footer-links:active {
+    color: rgba(255, 255, 255, 1);
+    opacity: 60%;
 }
