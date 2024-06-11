@@ -334,7 +334,7 @@ body {
   .site-header__toggle-button {
     display: block;
     padding: 10px;
-    border: 1px solid #de2e54;
+    border: none;
     border-radius: 2px;
     background-color: #fff;
   }
